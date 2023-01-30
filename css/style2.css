@@ -13,18 +13,18 @@ body, html {
   padding: 25px;
 	width: 100%;
 	border-radius: 5px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/design1_image1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/design1_image2.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  z-index: -2;
 }
 
 h1{
   font-size: 60px;
   font-family: 'Roboto',sans-serif;
-  
 }
 
 h2 {
@@ -44,40 +44,41 @@ p {
 }
 .logo {
   height: 250px;
-  transform: translate(150%, 35%);
+  transform: translate(-280%, 150%);
   position: relative;
   top: 50%;
   left: 50%;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: #f1f1f1;
-  position:absolute;
-  height: fit-content;
-  overflow: auto;
+.menu-bar {
+  display: flex;
+  background:none;
+  border: solid 0.5px;
+  float: right;
+
+
 }
 
-li a {
+.menu-bar a {
   display: block;
-  color: #000;
-  padding: 8px 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 15px;
 }
 
-li a.active {
-  background-color: #04AA6D;
-  color: white;
+.menu-bar.home{
+  background-color:green;
 }
 
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+.menu-bar.contact, .menu-bar.about{
+  background-color:#0081C9;
 }
 
+.menu-bar a:hover {
+  background-color: rgb(237, 16, 16);
+}
 main{
   margin-top: 25px;
   margin-left: 25px;
