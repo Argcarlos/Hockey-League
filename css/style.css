@@ -10,6 +10,7 @@
   --color7: #BFDB38;
   --color8: #FC7300;
   --color9: #F8F8F8;
+  --color10:#E9E8E8;
   --success-color: #5cb85c;
   }
 
@@ -245,7 +246,64 @@ th {
   color: var(--color4);
 }
 
- 
+ /*.......Form----------*/
+
+ fieldset {
+  display: block;
+  padding: 15px;
+  border: none;
+}
+
+ form {
+  border: 2px solid var(--color4);
+  background-color: var(--color10);
+  position: relative;
+  line-height: 1.5;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border: 1px solid var(--color9);
+  border-radius: 1px;
+}
+
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+
+input[type=submit] {
+  background-color:var(--color4);
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.permission{
+  font-size: 1.6rem;
+  margin: 0 10px 0 10px;
+  color: var(--color3);
+}
+
+.uniform td{
+  margin: 0 10px 0 10px;
+  border-radius: 0px;
+  padding: 10px;
+  border-style: none;
+}
+
+form h1{
+  font-size: 1.6rem;}
+  
 
 
 

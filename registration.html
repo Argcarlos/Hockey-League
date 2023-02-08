@@ -11,114 +11,154 @@
 
 <body>
   <header>
-    <nav class="nav">
-      <div class="container">
+    <div class="container">
+        <div class="brand">
+            <a href="/">Mighty Ducks Hockey League</a>
+        </div>  
         <div>
-          <a class="text-logo" href="/index.html">Mighty Ducks Hockey League</a>
+            <img src="/img/Logo_Mighty_ducks-01.png" class="logo" alt="logo" />
         </div>
-        <ul>
-          <li><a class="current" href="#">Home</a></li>
-          <li><a href="./about.html">About MHDL</a></li>
-          <li><a href="./game_info.html">Game Information</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="banner">
-      <div>
-        <img src="./img/Logo_Mighty_ducks-01.png" class="logo" alt="logo">
-      </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="./about.html">About MHDL</a></li>
+                <li><a href="./game_info.html">Game Information</a></li>
+                <li><a href="./registration.html">Registration</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
+</header>
+  <main>
+    <section>
+      <h1>Registration Form</h1>
+      <form action="/show_data.html" method="get" id="show_data">
+        <fieldset>
+          <label for="first_name">First name:</label>
+          <input type="text" id="" name="first_name" maxlength="50" size="4">
 
-    <div class="title">
-      <h2>Registration Form</h2>
-    </div>
-  </header>
+          <label for="last_name">Last name:</label>
+          <input type="text" id="" name="last_name" maxlength="50" size="4"><br>
 
-  <!--Home-->
-  <div class="home-container">
-    
-    <div class="social-bar">
-      <div class="social-bar-text">
-        <h3>Follow the MHDL</h3>
-      </div>
+          <label for="street_address">Street Address:</label>
+          <input type="text" id="" name="street_address" maxlength="50" size="4"><br>
+          
+          <label for="city">City:</label>
+          <input type="text" id="" name="city" maxlength="50" size="4">
+          
+          <label for="zip_code">Zip Code:</label>
+          <input type="text" id="" name="zip_code" maxlength="10" size="4"><br>
+          
+          <label for="birth_date">Birth Date:</label>
+          <input type="date" id="" name="birth_date"><br>
+          
+          <label for="gender">Gender:</label>
+          <input type="checkbox" name="male" value="Male">
+          <label for="male">Male</label>
+          <input type="checkbox" name="female" value="Female">
+          <label for="female"> Female</label><br><br>
 
-      <ul>
-        <li>
-          <a href="http://facebook.com">
-            <img src="./img/facebook.png" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="http://twitter.com">
-            <img src="./img/twitter.png" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="http://instagram.com">
-            <img src="./img/instagram.png" alt="">
-          </a>
-        </li>
-      </ul>
-    </div>
+          <label for="grade">Grade:</label>
+          <input type="checkbox" name="pre" value="pre">
+          <label for="pre">Pre-School</label>
+          <input type="checkbox" name="fir" value="fir">
+          <label for="fir"> 1st</label>
+          <input type="checkbox" name="sec" value="sec">
+          <label for="sec"> 2nd</label>
+          <input type="checkbox" name="thir" value="thir">
+          <label for="thir"> 3rd</label>
+          <input type="checkbox" name="four" value="four">
+          <label for="four"> 4th</label>
+          <input type="checkbox" name="fif" value="fif">
+          <label for="fif"> 5th</label><br>
 
-    <div class="home-content">
-        <form action="/show_data.html" method="get" id="show_data">
-          <fieldset>
-            <label for="first_name">First name:</label>
-            <input type="text" id="" name="first_name">
+          <h2>Which elementary School do you live near? </h2>
+          <label for="clos_schoo">Closest School:</label>
+          <select id="school" name="school">
+            <option value="ajk">AJ Katzenmair</option>
+            <option value="gree">Greenbay</option>
+            <option value="hay">Howard A Yeager</option>
+            <option value="mph">Marjorie P Hart</option>
+            <option value="north">North Elementary</option>
+            <option value="south">South Elementary</option>
+          </select><br>
+          
+          <h2>What position(s) do you normally play? (check all that ) </h2>
+          
+          <input type="checkbox" name="forw" value="forw">
+          <label for="forw">Forward</label>
+          <input type="checkbox" name="mid" value="mid">
+          <label for="mid"> Midfield</label><br>
+          <input type="checkbox" name="def" value="def">
+          <label for="def"> Defense</label>
+          <input type="checkbox" name="goal" value="goal">
+          <label for="goal"> Goalkeeper</label><br>
 
-            <label for="last_name">Last name:</label>
-            <input type="text" id="" name="last_name"><br>
+          <h2>Uniform Size: </h2>
 
-            <label for="street_address">Street Address:</label>
-            <input type="text" id="" name="street_address"><br>
-            
-            <label for="city">City:</label>
-            <input type="text" id="" name="city">
-            
-            <label for="zip_code">Zip Code:</label>
-            <input type="text" id="" name="zip_code"><br>
-            
-            <label for="birth_date">Birth Date:</label>
-            <input type="date" id="" name="birth_date"><br>
+          <table class="uniform">
+            <tr>
+              <td><input type="checkbox" name="y_small" value="y_small">
+                <label for="y_small">Youth Small</label></td> 
+              <td><input type="checkbox" name="medium" value="medium">
+                <label for="medium"> Medium</label></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="y_medium" value="y_medium">
+                <label for="y_medium">Youth Medium</label></td> 
+              <td><input type="checkbox" name="large" value="large">
+                <label for="large">Large</label></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="y_large" value="y_large">
+                <label for="y_large">Youth Large</label></td>
+              <td><input type="checkbox" name="e_large" value="e_large">
+                <label for="e_large"> Extra-Large</label></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="small" value="small">
+                <label for="small">Small</label></td>
+            </tr>
+          </table>
+          <h1>Permission to play</h1>
+          <div class="permission">
+            <p>
+              I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). 
+              In recognizing the possibility of physical injury associated with  hockey and  in consideration for the "League" accepting the registrant for its hockey 
+              programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their  employees  and   associated   personnel   and  volunteers,
+              including  the  facilities   used  for practices and games,  against any claim by or on behalf of the registrant as a  result of the registrant's  participation
+              in the  programand/orbeing  transported  to or from  MDHL sponsored activities,which transportation. 
+              By signing below, I here by agree and authorize the above.ln addition, by signing below, also acknowledge that I have read the cancellation policy and agree to its terms. 
+            </p>
+          </div>
+          
 
+          <label for="parent">Parent/Guardian Signature</label>
+          <input type="text" id="" name="parent" maxlength="50" size="4"><br>
+          <label for="signature">Date:</label>
+          <input type="text" id="" name="signature" maxlength="20" size="4"><br>
 
-
-
-
-            
-            
-            <label for="parent">Parent/Guardian:</label>
-            <input type="text" id="" name="parent"><br>
-
-
-
-
-
-            <input type="submit" value="Submit">
-
-
-
-          </fieldset>
-            
-
-        </form>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
         
-            
-  </div>
+
+
+
+    </section>
+  </main>
 <!--Footer-->
-  <footer class="footer">
-    <div class="footer-container">
+<Footer>
+  <nav class="menu-footer">
+      <h3>Powered by CaQ</h3>
       <ul>
-        <li><a class="footer_about" href="about.html">About us</a></li>
-        <li><a class="footer_rules" href="rules.html">Rules of play & Policies</a></li>
-        <li>
-          <div class="footer_copyright">Powered by CAQ</div>
-        </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="rules.html">Rules</a></li>
       </ul>
-    </div>
-  </footer>
+  </nav>
+  
+</Footer>
 </body>
 
 </html>
