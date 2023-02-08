@@ -120,7 +120,6 @@
 
 }
 
-
 .navbar a:hover {
   color: var(--primary-color);
   font-weight: bold;
@@ -154,6 +153,50 @@ section>h1{
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+/*----Home-container, rules------*/
+
+.home-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 70vh;
+  padding: 25px;
+  margin: 50px auto;
+  letter-spacing: 1.5px;
+  text-indent: 15px;
+}
+
+.home-container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.home-container h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.home-container .title{
+  font-size: 1.5rem;
+  font-weight: small;
+  margin: 0;
+  padding: 0;
+}
+
+.home-container .third {
+  margin: 0;
+  padding: 15px;
+  list-style-type:lower-alpha;
+}
+ 
+
 
 
 footer{
