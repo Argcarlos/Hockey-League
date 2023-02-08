@@ -137,8 +137,7 @@ main{
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   padding: 1rem;
   justify-content: center;
 }
@@ -171,6 +170,7 @@ section h1{
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 
 /*----Home-container, rules------*/
 
@@ -228,8 +228,8 @@ section h1{
 td, th, td{
   border:1px solid var(--color4);
   padding:15px;
-
 }
+
 th {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -248,7 +248,6 @@ th {
   flex-wrap: wrap;
 }
   
-
 .info_additional .item {
   font-size: 1rem;
   margin: 0;
@@ -300,7 +299,6 @@ form {
   border: none;
 }
 
- 
 input[type=text], input[type=submit] {
   width: 100%;
   padding: 12px;
@@ -312,11 +310,9 @@ input[type=text], input[type=submit] {
   border-radius: 1px;
 }
 
-
 input[type=checkbox] {
   margin-top: 16px;
 }
-
 
 input[type=submit] {
   background-color:var(--color4);
@@ -345,8 +341,7 @@ form h1{
   font-size: 1.6rem;}
   
 
-
-
+/*-----Footer-----*/
 footer{
   width: 100%;
   height: 5vh;
@@ -410,62 +405,34 @@ color: var(--primary-color);
 font-weight: bold;
 }
 
-/*
+/*--------Responsive----*/
+
 @media screen and (max-width:768px) {
   header{
       flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
-  }
-  nav{
       width: 100%;
+
+  }
+  navbar{
+      width: 70%;
       flex-direction: row;
       justify-content: space-around;
   }
-  header>img{
-      height: 50%;
+  .container{
+      height: 100%;
+      width: 80%;
   }
 }
 
-@media screen and (max-width:625px) {
-  .big{
-      flex-direction: column;
-      height: auto;
-  }
-  .big>img{
-      width: 100%;
-  }
-  .big>div{
-      width: 100%;
+ 
+
+@media only screen and (max-width: 480px) {
+  img {
+  max-width: 100%;
+  width: 500px; 
+  object-fit: cover;
+  object-position: bottom;
   }
 }
-
-@media screen and (max-width:375px) {
-  .title{
-      font-size: 1rem;
-  }
-  header{
-      gap: .5rem;
-  }
-  header>img{
-      height: auto;
-      width: 25%;
-  }
-  .card{
-      height: 25rem;
-      flex-direction: column;
-      justify-content: space-between;
-
-  }
-  .card>img{
-      width: 100%;
-      height: 80%;
-  }
-  .card>div{
-      width: 100%;
-  }
-  .big{
-      height: auto;
-  }
-}
-*/
