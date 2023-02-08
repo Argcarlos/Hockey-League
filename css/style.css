@@ -133,9 +133,26 @@ main{
   padding: 1rem;
   
 }
+.home-index {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  justify-content: center;
+}
 
-section{
+.home-index ul {
+  font-size: 3rem;
   margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+section {
+  margin: 0 auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -143,7 +160,7 @@ section{
   
 }
 
-section>h1{
+section h1{
   width: 100%;
   background-color: var(--color4);
   color: #FBFACD;
@@ -266,20 +283,24 @@ th {
 }
 
  /*.......Form----------*/
+form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 600px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 2px solid var(--color4);
+  border-radius: 1em;
+  background-color: var(--color10);
 
+}
  fieldset {
   display: block;
   padding: 15px;
   border: none;
 }
 
- form {
-  border: 2px solid var(--color4);
-  background-color: var(--color10);
-  position: relative;
-  line-height: 1.5;
-}
-
+ 
 input[type=text], input[type=submit] {
   width: 100%;
   padding: 12px;
